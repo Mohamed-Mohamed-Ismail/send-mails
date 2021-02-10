@@ -14,6 +14,6 @@ class MailController extends Controller
             $this->dispatch(new sendMails($data));
         });
 
-        return ' okay, will send in background ';
+        return ' Success, will send emails to users, you can leave this page';
     }
 }
