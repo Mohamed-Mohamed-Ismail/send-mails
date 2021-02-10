@@ -40,8 +40,11 @@ Import the Postman collection(Send Mails) or use the following URLs:
    ```
 2. To send email to users: [/api/send-mails](http://127.0.0.1:8000/api/send-mails)
 
+3.  Run the following command to start  send email to users:
 
-
+ ```bash
+     php artisan queue:work
+   ```
    
 ## Notes
 * I have uploaded the .env file to make it easier to use.
