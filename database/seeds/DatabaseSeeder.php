@@ -11,6 +11,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $users = factory(App\User::class, 20000)->make()->toArray();
+
+        foreach ($users as $user) {
+            App\User::create($user);
+        }
     }
 }
