@@ -14,6 +14,6 @@ class MailController extends Controller
             $this->dispatch(new sendMails($data));
         });
 
-        return ' Success, will send emails to users, you can leave this page';
-    }
+        return response()->json(['status' => 'Success'
+                                 ,'message' => 'will send emails to users, you can leave this page'], 200);    }
 }
