@@ -10,19 +10,18 @@ Send emial is a simple Laravel project to send email  to large number of  users 
    ```bash
      composer install
    ```
-3. Create database in phpMyaAdmin with name 'emails' 
 3. Run the following command to migrate database tables:
    
    ```bash
      php artisan migrate
    ```
 
-3. Run the following command to start the project:
+4. Run the following command to start the project:
    ```bash
      php artisan serve
    ```
 
-4. Open the following URL:
+5. Open the following URL:
 
    ```bash
      http://127.0.0.1:8000/
